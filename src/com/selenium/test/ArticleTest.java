@@ -1,4 +1,4 @@
-package com.selenium;
+package com.selenium.test;
 
 import com.selenium.page.NewsPage;
 import org.junit.Test;

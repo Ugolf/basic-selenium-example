@@ -1,4 +1,4 @@
-package com.selenium;
+package com.selenium.test;
 
 import org.junit.After;
 import org.junit.Before;
