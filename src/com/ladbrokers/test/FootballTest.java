@@ -30,8 +30,7 @@ public class FootballTest extends ParentTest {
         assertTrue("Football menu is not visible",
             newsPage.isFootballMenuActive());
 
-        wait.until(ExpectedConditions.visibilityOf(newsPage.getPremierLeagueButton()));
-        newsPage.getPremierLeagueButton().click();
+        bot.waitAndClick(newsPage.getPremierLeagueButton(), 2);
         wait.until(ExpectedConditions.titleIs(premierLeagueTitle));
 
         assertEquals("The page title should be Premier League",
