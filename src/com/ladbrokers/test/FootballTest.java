@@ -1,10 +1,8 @@
-package com.selenium.test;
+package com.ladbrokers.test;
 
-import com.selenium.page.NewsPage;
-import com.selenium.testutils.ActionsUtils;
+import com.ladbrokers.testutils.ActionsUtils;
 import org.junit.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -19,12 +17,8 @@ public class FootballTest extends ParentTest {
      */
     @Test
     public void validatePremierLeagueButton() {
-
         String newsTitle = "Online Betting News at Ladbrokes.com";
         String premierLeagueTitle = "Premier League Betting Tips, lastest News and Predictions | Ladbrokes.com";
-
-        NewsPage newsPage = new NewsPage(driver);
-        WebDriverWait wait = new WebDriverWait(driver, 5);
 
         wait.until(ExpectedConditions.visibilityOf(newsPage.getFootballButton()));
 

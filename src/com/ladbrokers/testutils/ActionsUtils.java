@@ -1,4 +1,4 @@
-package com.selenium.testutils;
+package com.ladbrokers.testutils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

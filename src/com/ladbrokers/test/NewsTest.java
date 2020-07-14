@@ -1,10 +1,8 @@
-package com.selenium.test;
+package com.ladbrokers.test;
 
-import com.selenium.page.NewsPage;
-import com.selenium.testutils.ActionsUtils;
+import com.ladbrokers.testutils.ActionsUtils;
 import org.junit.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.junit.Assert.assertEquals;
 
@@ -18,10 +16,6 @@ public class NewsTest extends ParentTest {
      */
     @Test
     public void validateLatestBettingNews() {
-
-        NewsPage newsPage = new NewsPage(driver);
-        WebDriverWait wait = new WebDriverWait(driver, 5);
-
         wait.until(ExpectedConditions.visibilityOf(newsPage.getLatestBettingNewsContainer()));
         assertEquals("Default number of latest betting news is wrong", 6,
             newsPage.getLatestBettingNews().size());
@@ -32,6 +26,5 @@ public class NewsTest extends ParentTest {
 
         assertEquals("Number of latest betting news is wrong", 12,
             newsPage.getLatestBettingNews().size());
-
     }
 }
