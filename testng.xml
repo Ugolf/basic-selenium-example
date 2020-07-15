@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Test-Suite" >
+    <test name="LadBrokers" >
+        <parameter name="browser" value="chrome" />
+        <classes>
+            <class name="com.ladbrokers.test.ArticleTest" />
+            <class name="com.ladbrokers.test.FootballTest" />
+            <class name="com.ladbrokers.test.NewsTest" />
+        </classes>
+    </test>
+</suite>

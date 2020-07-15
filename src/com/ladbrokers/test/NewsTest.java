@@ -1,7 +1,7 @@
 package com.ladbrokers.test;
 
-import com.ladbrokers.testutils.ActionsUtils;
-import org.junit.Test;
+import com.testutils.ActionsUtils;
+import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import static org.junit.Assert.assertEquals;

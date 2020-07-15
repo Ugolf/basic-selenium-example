@@ -1,6 +1,6 @@
 package com.ladbrokers.test;
 
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 import static org.junit.Assert.assertThat;
